@@ -1,0 +1,19 @@
+<form action="{{ url_for('handle_data') }}" method="post">
+    Informe seu usuário
+    <input type="text" name="username">
+    <br>
+
+    Informe sua senha
+    <input type="password" name="password">
+    <br>
+
+    Informe a hash do post no Instagram
+    <input type="text" name="postHash">
+    <br>
+
+    Informe a quantidade de comentários que o post no Instagram possui
+    <input type="number" name="commentsTotal">
+    <br>
+
+    <input type="submit" value="Sortear!">
+</form>
