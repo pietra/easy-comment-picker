@@ -2,8 +2,6 @@
 from random import randrange
 from instagram_api import InstagramApi
 
-COMMENTS_NUMBER = 1000
-
 class Raffle():
     instagram_client = None
 
@@ -17,4 +15,3 @@ class Raffle():
         usernames = self.instagram_client.return_all_comments_users(post_hash, post_number_comments)
         index = self._get_random_user(len(usernames))
         return usernames[index]
-
